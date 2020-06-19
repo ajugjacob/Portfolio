@@ -7,6 +7,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+span {
+    background-color: red !important;
+}
+
+.red-color {
+    color: red;
+}
+
   /* montserrat-600 - latin */
 @font-face {
     font-family: 'Montserrat-sb';
@@ -178,14 +186,15 @@ header .hero-second{
 /* Work */
 
 .work-container {
-    padding-top: 100px;
+    padding: 100px 0;
     background: #EFEFEF;
 }
 
 main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 50px;
 }
 
 .work-content{
@@ -199,7 +208,18 @@ main {
     font-family: Montserrat-sb;
 }
 
-.work-content p {
+.left-content .work-content p {
+    text-align: right;
+    font-family: Montserrat-reg;
+}
+
+.left-content .work-content h3 {
+    float: right;
+    padding: 0;
+} 
+
+.right-content .work-content p {
+    text-align: left;
     font-family: Montserrat-reg;
 }
 
@@ -222,7 +242,7 @@ main {
     color: #ffffff;    
 }
 
-.resume-content h1 {
+.resume-content p {
     font-family: Exo;
     font-size: 120px;
 }
